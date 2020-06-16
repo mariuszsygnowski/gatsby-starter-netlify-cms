@@ -1,6 +1,7 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
 import Layout from '../../components/Layout'
+import { max } from 'lodash'
 
 function encode(data) {
   return Object.keys(data)
@@ -106,6 +107,17 @@ export default class Index extends React.Component {
                   </button>
                 </div>
               </form>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1161.2526147773156!2d0.10151016250672029!3d51.53113035079952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd37bf22e61b8f150!2sG%26R%20AUTO%20REPAIRS%20LTD!5e0!3m2!1sen!2suk!4v1592326607856!5m2!1sen!2suk"
+                style={{
+                  width: '100%',
+                  height: 500,
+                  border: 0,
+                  allowFullScreen: '',
+                  ariaHidden: false,
+                  tabIndex: 0,
+                }}
+              ></iframe>
             </div>
           </div>
         </section>
